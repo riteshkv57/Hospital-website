@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Departments</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.departments {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.department-card {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.department-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.department-card h2 {
+    margin-top: 10px;
+}
+
+.department-card p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+</style>
+<body>
+    <header>
+        <h1>Hospital Departments</h1>
+    </header>
+
+    <main>
+        <section class="departments">
+            <div class="department-card">
+                <img src="images/cardiology.jfif" alt="Department 1">
+                <h2>Cardiology</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla etiam feugiat.</p>
+            </div>
+
+            <div class="department-card">
+                <img src="images/orthopaedic.jfif" alt="Department 2">
+                <h2>Orthopedics</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla etiam feugiat.</p>
+            </div>
+
+            <div class="department-card">
+                <img src="images/neurology.jfif" alt="Department 3">
+                <h2>Neurology</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla etiam feugiat.</p>
+            </div>
+
+            <!-- Add more department cards as needed -->
+        </section>
+    </main>
+</body>
+</html>
