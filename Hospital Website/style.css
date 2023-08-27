@@ -1,0 +1,205 @@
+/* Basic styling, you can enhance this further */
+
+*{
+    box-sizing: border-box;
+}
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #007BFF;
+}
+
+/* Add margin to the content to prevent it from jumping when the navigation becomes fixed */
+.main-content {
+    margin-top: 1000px; /* Adjust the value as needed */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+h2{
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+}
+.text{
+    font-size: 20px;
+    text-align: right;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#headername{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+nav li {
+    margin: 0 15px;
+}
+
+nav .line {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    position: relative; /* Add this line */
+
+}
+
+nav .line::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px; /* Adjust this value to control the underline's position */
+    height: 2px; /* Adjust this value to control the underline's thickness */
+    background-color: #fff565;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+nav .line:hover::after {
+    transform: scaleX(1);
+}
+
+section {
+    padding: 10px;
+}
+
+.full-screen-section {
+    height: 95vh;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    background-image: url('images/bannernaya.jpg');
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+    background-position: center;
+    color: #000000;
+    text-align:center;
+}
+
+.full-screen-content {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.full-screen-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.full-screen-content p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#servicess {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    align-items:center;
+    justify-items:center;
+}
+
+.servicess-box {
+    /* flex-basis: calc(33.33% - 20px); Distribute boxes in a row with equal width */
+    background: #ffffff;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.23);
+    padding: 20px 10px;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    width: 250px;
+    height: 300px;
+    border: 1px solid #000000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicess-box:hover {
+    transform: scale(1.1);
+    box-shadow: 5 10px 30px rgba(0, 0, 0, 2);
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+#services .service {
+    background-color: #F9F9F9;
+    border: 1px solid #E5E5E5;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* #doctors{
+    display: flex;
+    max-width: 2000px;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+} */
+
+/* .doctor-box {
+    border: 1px solid #E5E5E5;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+} */
+
+/* .doctor-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+} */
+
+.doctor-box img {
+    width: 80px;
+    border-radius: 10%;
+    margin-bottom: 10px;
+}
+
+#contact .emergency-contacts {
+    background-color: rgb(165, 195, 255);
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#contact{
+    padding-top: 45px;
+}
+
+#contact .emergency-contacts ul {
+    padding-left: 20px;
+}
